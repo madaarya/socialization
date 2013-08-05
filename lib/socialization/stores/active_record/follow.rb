@@ -3,7 +3,7 @@ module Socialization
     class Follow < ActiveRecord::Base
       extend Socialization::Stores::Mixins::Base
       extend Socialization::Stores::Mixins::Follow
-      extend Socialization::ActiveRecordStores::Mixins::Base
+      # extend Socialization::ActiveRecordStores::Mixins::Base
 
       belongs_to :follower,   :polymorphic => true
       belongs_to :followable, :polymorphic => true

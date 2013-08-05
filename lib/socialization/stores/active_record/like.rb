@@ -3,7 +3,7 @@ module Socialization
     class Like < ActiveRecord::Base
       extend Socialization::Stores::Mixins::Base
       extend Socialization::Stores::Mixins::Like
-      extend Socialization::ActiveRecordStores::Mixins::Base
+      # extend Socialization::ActiveRecordStores::Mixins::Base
 
       belongs_to :liker,    :polymorphic => true
       belongs_to :likeable, :polymorphic => true

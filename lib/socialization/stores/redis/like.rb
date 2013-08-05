@@ -3,7 +3,7 @@ module Socialization
     class Like < Socialization::RedisStores::Base
       extend Socialization::Stores::Mixins::Base
       extend Socialization::Stores::Mixins::Like
-      extend Socialization::RedisStores::Mixins::Base
+      # extend Socialization::RedisStores::Mixins::Base
 
       class << self
         alias_method :like!, :relation!;                          public :like!
