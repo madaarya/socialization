@@ -3,7 +3,6 @@ module Socialization
     class Follow < Socialization::RedisStores::Base
       extend Socialization::Stores::Mixins::Base
       extend Socialization::Stores::Mixins::Follow
-      # extend Socialization::RedisStores::Mixins::Base
 
       class << self
         alias_method :follow!, :relation!;                          public :follow!

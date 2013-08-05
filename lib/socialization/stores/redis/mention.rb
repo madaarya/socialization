@@ -3,7 +3,6 @@ module Socialization
     class Mention < Socialization::RedisStores::Base
       extend Socialization::Stores::Mixins::Base
       extend Socialization::Stores::Mixins::Mention
-      # extend Socialization::RedisStores::Mixins::Base
 
       class << self
         alias_method :mention!, :relation!;                          public :mention!

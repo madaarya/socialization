@@ -3,8 +3,7 @@ module Socialization
     class Mention < ActiveRecord::Base
       extend Socialization::Stores::Mixins::Base
       extend Socialization::Stores::Mixins::Mention
-      # extend Socialization::ActiveRecordStores::Mixins::Base
-
+     
       belongs_to :mentioner,   :polymorphic => true
       belongs_to :mentionable, :polymorphic => true
 
